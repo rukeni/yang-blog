@@ -91,7 +91,11 @@
       "@opentelemetry/resources": "^1.15.1",
       "@opentelemetry/sdk-trace-base": "^1.15.1",
       "@opentelemetry/sdk-trace-node": "^1.15.1",
-      "@opentelemetry/semantic-conventions": "^1.15.1"
+      "@opentelemetry/semantic-conventions": "^1.15.1",
+      "remark-mdx": "3.0.0",
+      "unified": "11.0.4",
+      "remark-parse": "11.0.0",
+      "mdast-util-frontmatter": "2.0.1"
     }
   }
 }
