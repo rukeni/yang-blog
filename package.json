@@ -1,11 +1,11 @@
 {
-  "name": "digital-garden",
-  "version": "0.7.2",
+  "name": "yang-blog",
+  "version": "0.0.1",
   "private": true,
-  "repository": "https://github.com/thedevdavid/digital-garden",
+  "repository": "https://github.com/rukeni/yang-blog",
   "author": {
-    "name": "David Levai",
-    "url": "https://twitter.com/thedevdavid"
+    "name": "Yang Seung Min",
+    "url": "https://twitter.com/rukeni"
   },
   "scripts": {
     "dev": "next dev",
