@@ -14,7 +14,7 @@ type CardProps = React.ComponentProps<typeof Card>;
 export function Sidebar({ className, ...props }: CardProps) {
   return (
     <>
-      <Card className={cn("mb-4", className)} {...props}>
+      {/* <Card className={cn("mb-4", className)} {...props}>
         <CardHeader>
           <CardTitle>Where am I currently?</CardTitle>
         </CardHeader>
@@ -37,10 +37,10 @@ export function Sidebar({ className, ...props }: CardProps) {
             Digital Nomad diaries <ArrowRight className="mr-2 h-4 w-4" />
           </Button>
         </CardFooter>
-      </Card>
-      <Card className={cn(className)} {...props}>
+      </Card> */}
+      {/* <Card className={cn(className)} {...props}>
         <CardHeader>
-          <CardTitle>What am I working on?</CardTitle>
+          <CardTitle>작업해 온 것들</CardTitle>
         </CardHeader>
         <CardContent className="grid gap-4">
           {projects.slice(0, siteMetadata.projectsOnHomePage).map((project) => (
@@ -77,7 +77,7 @@ export function Sidebar({ className, ...props }: CardProps) {
             </Link>
           </Button>
         </CardFooter>
-      </Card>
+      </Card> */}
     </>
   );
 }

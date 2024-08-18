@@ -17,13 +17,13 @@ export function HeroSimple({ title, subtitle }: HeroProps) {
         {title}
       </h1>
       <div className="flex content-center items-center justify-center">
-        <Image
-          className="aspect-square h-10 w-10 rounded-full border border-black"
-          width={40}
-          height={40}
-          src="/avatar.png"
+        {/* <Image
+          className="aspect-square h-32 w-32 rounded-lg shadow"
+          width={100}
+          height={100}
+          src="/hero.png"
           alt={defaultAuthor.name}
-        />
+        /> */}
         <p className="ml-2 font-bold text-muted-foreground">{defaultAuthor.handle}</p>
       </div>
     </div>

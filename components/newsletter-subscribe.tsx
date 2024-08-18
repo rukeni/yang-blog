@@ -74,7 +74,7 @@ const NewsletterSubscribe = ({
         <div className="mx-auto max-w-lg text-center">
           <h2 className="font-heading text-2xl font-bold md:text-3xl">{title}</h2>
 
-          <p className="hidden text-muted-foreground sm:mt-4 sm:block">{description}</p>
+          <p className="hidden text-muted-foreground text-white sm:mt-4 sm:block">{description}</p>
         </div>
 
         <div className="mx-auto mt-8 max-w-xl">
@@ -86,7 +86,7 @@ const NewsletterSubscribe = ({
                 render={({ field }) => (
                   <FormItem className="flex-auto">
                     <FormControl>
-                      <Input type="email" placeholder="anakin.skywalker@darksi.de" {...field} />
+                      <Input type="email" placeholder="yang@gmail.com" {...field} />
                     </FormControl>
                     <FormMessage />
                   </FormItem>
@@ -97,15 +97,15 @@ const NewsletterSubscribe = ({
               </Button>
             </form>
           </Form>
-          {siteMetadata.newsletterUrl && (
+          {/* {siteMetadata.newsletterUrl && (
             <div className="mt-4 flex items-center justify-center">
               <Button asChild variant="ghost">
                 <Link href={siteMetadata.newsletterUrl} target="_blank">
-                  Let me read it first <ArrowRight className="mr-2 h-4 w-4" />
+                  뉴스레터 발행 글 보기 <ArrowRight className="mr-2 h-4 w-4" />
                 </Link>
               </Button>
             </div>
-          )}
+          )} */}
         </div>
       </div>
 
