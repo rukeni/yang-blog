@@ -42,7 +42,7 @@ export type SiteMetaData = {
   analyticsProvider?: AnalyticsProvider;
   defaultTheme: "light" | "dark" | "system";
   activeAnnouncement: boolean;
-  announcement: Pick<AnnouncementBarProps, "buttonText" | "link">;
+  announcement?: Pick<AnnouncementBarProps, "buttonText" | "link">;
   postsPerPage: number;
   postsOnHomePage: number;
   projectsOnHomePage: number;

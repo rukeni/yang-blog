@@ -178,7 +178,7 @@ export default async function PostPage({ params }: PostProps) {
             />
           </div>
         </article>
-        <aside className="hidden lg:block">
+        <aside className="ml-4 hidden lg:block">
           <Card className={cn("sticky top-28 mb-4")}>
             <CardHeader>
               <CardTitle>Table of Contents</CardTitle>

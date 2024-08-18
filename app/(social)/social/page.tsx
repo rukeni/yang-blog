@@ -39,14 +39,14 @@ export default async function SocialPage() {
           <Signature />
         </div>
       </div>
-      {siteMetadata.newsletterUrl && (
+      {/* {siteMetadata.newsletterUrl && (
         <NewsletterSubscribe
           title="I also write deep dives in email"
           description="I write about coding, design, digital nomad life, and solopreneurship. Join over 1,000 other developers in
             getting better in business. Unsubscribe whenever."
           buttonText="Send me the emails"
         />
-      )}
+      )} */}
     </>
   );
 }

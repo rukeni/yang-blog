@@ -32,12 +32,9 @@ export default async function Home() {
     .slice(0, siteMetadata.postsOnHomePage);
 
   return (
-    <div className="pb-10">
-      <HeroSimple
-        title="Building hackin’ cool digital products around the world 🌴."
-        subtitle="I'm Amy. Frontend engineer writing code and blog on the internet."
-      />
-      <div className="container mt-12 max-w-6xl">
+    <main className="pb-10">
+      <HeroSimple title="오늘은 뭘 해볼까...🤔" />
+      <section className="container mt-12 max-w-6xl">
         <div className="grid grid-cols-1 place-items-start justify-between gap-12 lg:grid-cols-3">
           <div className="col-span-1 w-full lg:col-span-2">
             <div className="grid grid-flow-row gap-2">
@@ -56,26 +53,27 @@ export default async function Home() {
             <Sidebar />
           </aside>
         </div>
-      </div>
-      {siteMetadata.newsletterUrl && (
-        <NewsletterSubscribe
-          title="I also write deep dives in email"
-          description="I write about coding, design, digital nomad life, and solopreneurship. Join over 1,000 other developers in
-            getting better in business. Unsubscribe whenever."
-          buttonText="Send me the emails"
-        />
-      )}
+      </section>
+      {/* {siteMetadata.newsletterUrl && (
+        <section>
+          <NewsletterSubscribe
+            title="이메일로도 열심히 쓴 글을 전달 해드립니다."
+            description="저는 프론트엔드, 코딩에 대한 의견, 1인 기업, 부업, 경제 전반, 책 리뷰 등 다양한 분야에 대해서 글을 쓰고 있습니다."
+            buttonText="이메일 구독하기"
+          />
+        </section>
+      )} */}
       {aboutPage && (
-        <div className="container max-w-6xl">
-          <h2 className="mb-8 font-heading text-4xl font-bold">Who&apos;s this girl again?</h2>
+        <section className="container max-w-6xl">
+          <h2 className="mb-8 font-heading text-4xl font-bold">나를 소개합니다.</h2>
           <div className="grid grid-cols-1 place-items-start justify-between gap-12 lg:grid-cols-3">
             <div className="col-span-1 mx-auto flex flex-col items-center justify-center">
               <Image
-                src="/avatar-home.png"
+                src="/home-me.jpeg"
                 alt={defaultAuthor.name}
                 width={400}
                 height={498}
-                className="h-auto w-72 -rotate-1 hover:rotate-3"
+                className="h-auto w-72 -rotate-1 rounded-2xl hover:rotate-3"
               />
               <div className="text-center">
                 <h1 className="font-heading text-2xl font-bold">{defaultAuthor.name}</h1>
@@ -95,8 +93,8 @@ export default async function Home() {
               </article>
             </div>
           </div>
-        </div>
+        </section>
       )}
-    </div>
+    </main>
   );
 }

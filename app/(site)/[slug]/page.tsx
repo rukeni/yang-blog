@@ -54,7 +54,7 @@ export default async function PagePage({ params }: PageProps) {
         {page.description && <p className="m-0 text-xl">{page.description}</p>}
         {page.lastUpdatedDate && (
           <time className="text-sm text-slate-500">
-            Last updated: {format(parseISO(page.lastUpdatedDate), "LLLL d, yyyy")}
+            최근 수정일: {format(parseISO(page.lastUpdatedDate), "yyyy년 MM월 dd일")}
           </time>
         )}
         <hr className="my-4" />

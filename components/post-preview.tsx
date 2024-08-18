@@ -23,12 +23,12 @@ const PostPreview = ({ post }: PostPreviewProps) => {
         <div className="flex gap-2 text-sm leading-snug text-muted-foreground">
           <div className="flex items-center gap-1">
             <CalendarDays size={16} />
-            <time dateTime={post.publishedDate}>{format(parseISO(post.publishedDate), "LLLL d, yyyy")}</time>
+            <time dateTime={post.publishedDate}>{format(parseISO(post.publishedDate), "yyyy년 MM월 dd일")}</time>
           </div>
           <span className="opacity-50">|</span>
           <div className="flex items-center gap-1">
             <Timer size={16} />
-            <span>{`${post.readTimeMinutes} mins read`}</span>
+            <span>{`${post.readTimeMinutes} 분 안에 읽을 수 있음!`}</span>
           </div>
         </div>
         {post?.tags && (
