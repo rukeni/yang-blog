@@ -8,22 +8,22 @@ export const BASE_URL =
   `http://localhost:${process.env.PORT || 3000}`;
 
 export const defaultAuthor: AuthorType = {
-  name: "Amy Shields",
-  handle: "@amyshieldsfake",
+  name: "양승민",
+  handle: "@rukeni",
   socialProfiles,
-  email: "definitelyfake@nevermind.com",
+  email: "rukeni@naver.com",
   website: "https://nextjs.org",
-  jobTitle: "Frontend Engineer & UI Designer",
-  company: "Unicorns & Co.",
+  jobTitle: "프론트엔드 개발자 & 스타트업 잡부",
+  company: "작가 주식회사",
   availableForWork: true,
   location: {
-    city: "Los Angeles",
+    city: "서울",
     media: "/losangeles.jpg",
   },
 };
 
-const defaultTitle = `${defaultAuthor.name}'s Blog`;
-const defaultDescription = `I'm ${defaultAuthor.name}. Building hackin’ cool digital products around the world 🌴.`;
+const defaultTitle = "양블로그";
+const defaultDescription = `안녕하세요. 저는${defaultAuthor.name}입니다. 솔직하기도하고 이것저것 관심있기도하고... 합리적으로 추론 하되 직관적으로 의사결정을 하는 성격입니다. 예.`;
 
 const siteMetadata: SiteMetaData = {
   title: {
@@ -31,16 +31,16 @@ const siteMetadata: SiteMetaData = {
     default: defaultTitle,
   },
   description: defaultDescription,
-  siteRepo: "https://github.com/thedevdavid/digital-garden",
-  newsletterProvider: "mailerlite",
-  newsletterUrl: "https://developreneur.davidlevai.com",
+  siteRepo: "https://github.com/rukeni/yang-blog",
+  // newsletterProvider: "mailerlite",
+  // newsletterUrl: "https://developreneur.davidlevai.com",
   analyticsProvider: "umami",
   defaultTheme: "system",
-  activeAnnouncement: true,
-  announcement: {
-    buttonText: "Support on DevHunt →",
-    link: "https://devhunt.org/tool/modern-developer-blog-template-digital-garden-starter",
-  },
+  activeAnnouncement: false,
+  // announcement: {
+  //   buttonText: "Support on DevHunt →",
+  //   link: "https://devhunt.org/tool/modern-developer-blog-template-digital-garden-starter",
+  // },
   postsPerPage: 10,
   postsOnHomePage: 8,
   projectsOnHomePage: 4,
