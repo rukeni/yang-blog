@@ -21,7 +21,7 @@ export default makeSource({
     },
     remarkPlugins: [[remarkGfm], [remarkMath]],
     rehypePlugins: [
-      [rehypeKatex],
+      [rehypeKatex as unknown as any],
       [rehypeSlug],
       [
         rehypeAutolinkHeadings,
