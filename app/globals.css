@@ -81,3 +81,7 @@
     @apply duration-150 before:-ml-5 before:italic before:opacity-0 before:transition-opacity before:content-['#_'] hover:before:opacity-100;
   }
 }
+
+body {
+  font-family: 'Pretendard Variable', sans-serif;
+}
