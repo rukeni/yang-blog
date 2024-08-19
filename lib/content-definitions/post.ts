@@ -21,6 +21,12 @@ export const tagOptions = [
   "nextjs",
   "gatsby",
   "tailwindcss",
+  "React",
+  "클래스 컴포넌트",
+  "함수형 컴포넌트",
+  "메모리 관리",
+  "개발 가설",
+  "생각 정리",
 ];
 
 export const Post = defineDocumentType(() => ({
@@ -88,6 +94,7 @@ export const Post = defineDocumentType(() => ({
 
         // https://stackoverflow.com/a/70802303
         const regXHeader = /\n\n(?<flag>#{1,6})\s+(?<content>.+)/g;
+        // const regXHeader = /\n\n(#{1,6})\s+(.+)/g;
 
         const headings = Array.from(doc.body.raw.matchAll(regXHeader)).map(({ groups }) => {
           const flag = groups?.flag;
